@@ -25,4 +25,11 @@ public class UserController {
 
         return umsMembers;
     }
+
+    @GetMapping("/getAllUser")
+    public List<UmsMember> getReceiveAddressByMemberId() {
+        List<UmsMember> umsMembers = userService.getAllUser();
+
+        return umsMembers;
+    }
 }
